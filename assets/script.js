@@ -5,7 +5,7 @@ $("#currentDay").text(currentDate)
 };
 
 $(".saveBtn").click(function(){
-    var text = $(this).closest(".row").find("textarea").val();
+    var text = $(this).closest(".row").find(".description").val();
     var time = $(this).closest(".row").attr("id");
 
     // Save in Local Storage
@@ -16,15 +16,15 @@ $(".saveBtn").click(function(){
 // Load text from Local Storage
 
 var loadText = function() {
-    $("#9am").val(localStorage.getItem("9am"))
-    $("#10am").val(localStorage.getItem("10am"))
-    $("#11am").val(localStorage.getItem("11am"))
-    $("#12pm").val(localStorage.getItem("12pm"))
-    $("#1pm").val(localStorage.getItem("1pm"))
-    $("#2pm").val(localStorage.getItem("2pm"))
-    $("#3pm").val(localStorage.getItem("3pm"))
-    $("#4pm").val(localStorage.getItem("4pm"))
-    $("#5pm").val(localStorage.getItem("5pm"))
+    $("#9am .description").val(localStorage.getItem("9am"))
+    $("#10am .description").val(localStorage.getItem("10am"))
+    $("#11am .description").val(localStorage.getItem("11am"))
+    $("#12pm .description").val(localStorage.getItem("12pm"))
+    $("#1pm .description").val(localStorage.getItem("1pm"))
+    $("#2pm .description").val(localStorage.getItem("2pm"))
+    $("#3pm .description").val(localStorage.getItem("3pm"))
+    $("#4pm .description").val(localStorage.getItem("4pm"))
+    $("#5pm .description").val(localStorage.getItem("5pm"))
 }
 
 
